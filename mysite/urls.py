@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.conf import settings
 from django.contrib.auth import views as auth_views
 from users.views import profile, register
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 
 urlpatterns = [
@@ -31,6 +32,8 @@ urlpatterns = [
     path('', include('blog.urls', namespace='blog')),
 
 ]
+
+urlpatterns += staticfiles_urlpatterns()
 
 if settings.DEBUG:
     import debug_toolbar
