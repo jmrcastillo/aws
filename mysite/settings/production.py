@@ -6,7 +6,7 @@ import os
 DEBUG = True
 
 # security warning: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = os.environ.get('asdfasfsdfjas12121')
 
 ALLOWED_HOSTS = ['*']
 
